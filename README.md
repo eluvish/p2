@@ -6,7 +6,7 @@
 
 --
 ## Project Description:
-This site generates an xkcd style password. It takes 3 inputs from the user:
+This site generates an xkcd style password. It takes 3 inputs from the user:  
 1. Number of words (max: 9)  
 2. Whether the user wants a number added to the password (checkbox).  
 3. Whether the user wants a symbol added to the password (checkbox).  
@@ -19,11 +19,11 @@ of the PHP in index.php is a `foreach` loop which prints out the password.
 ## Screencast Demonstration:
 * URL:
 
-## Details for teaching team
+## Details for Teaching Team:
 * The file words.txt was used to generate the word list.  
-* In order to avoid notice errors all of the PHP in both index.php and logic.php is encased in an `if (!empty($\_GET))`
+* In order to avoid notice errors all of the PHP in both index.php and logic.php is encased in an `if (!empty($_GET))`
 
-## Plugins, libraries, packages or outside code used in the project.
+## Plugins, Libraries, Packages or Outside Code:
 * Bootstrap for styling
 * The .password css was taken from the demo site: <http://p2.dwa15.com> because I thought it had nice styling. I made some alterations but that's where I got it.
 * The HTML for the form was also taken from the demo site and uses the same keywords.
