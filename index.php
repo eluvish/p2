@@ -46,10 +46,6 @@ td{
 			border-radius: 50px;
  		}
 
-td.spacer{
-  width:100px;
-}
-
 p.explanation{
 	text-align: justify;
 	width: 400px;
@@ -70,6 +66,7 @@ p.explanation{
 <h1>Password Generator - xkcd Style</h1>
 
 <p class="password">
+
 	<?php
 		// Prints out the xkcd style password with the requested parameters
 if (!empty($_GET))
@@ -79,16 +76,14 @@ if (!empty($_GET))
 			echo $word;
 		}
 }
-else {
-	echo "Tr0ub4dor&3 is not a good password - generate a good one!";
-}
 		?>
 		</p>
+
 <table class="center">
   <tr>
     <td>
       <form method='GET' action='index.php'>
-      			<p class='options'>
+      			<p>
 
       				<label for='number_of_words'># of Words</label>
       				<input maxlength=1 size="5" type='text' name='number_of_words' id='number_of_words' value=''>  (Max 9)
