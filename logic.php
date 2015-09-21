@@ -19,13 +19,13 @@ if (!empty($_GET))
   // Push $num elements in to the output array and include a dash in between
   for ($i = 0; $i < $num; $i++)
   {
-		  array_push($output, $f_contents[rand(0, $lines)]);
+       array_push($output, $f_contents[rand(0, $lines)]);
 
       // Add a hyphen between words unless we have reached the final word
       if ($i !== $num-1)
       {
-				array_push($output, "-");
-		  }
+      	array_push($output, "-");
+      }
   }
 
   // if the user requested a number, add it to the array
