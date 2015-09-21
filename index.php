@@ -25,7 +25,13 @@ table.center {
    margin-right:auto;
    background-color: #eee;
    border-radius: 50px;
+	 width:300px;
  }
+
+td{
+	padding-bottom:15px;
+	padding-top: 15px;
+}
 
 .password {
  			text-align:center;
@@ -73,17 +79,14 @@ if (!empty($_GET))
 			echo $word;
 		}
 }
+else {
+	echo "Tr0ub4dor&3 is not a good password - generate a good one!";
+}
 		?>
 		</p>
 <table class="center">
   <tr>
-    <td class="spacer"></td>
-    <td></td>
-    <td class="spacer"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td style="padding-top:15px;">
+    <td>
       <form method='GET' action='index.php'>
       			<p class='options'>
 
@@ -97,16 +100,9 @@ if (!empty($_GET))
       				<input type='checkbox' name='add_symbol' id='add_symbol' >
       				<label for='add_symbol'>Add a symbol</label>
       			</p>
-    </td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td style="padding-bottom: 15px;">
       <input type='submit' class='btn btn-primary' value='Generate'>
     </form>
     </td>
-    <td></td>
   </tr>
 </table>
 
