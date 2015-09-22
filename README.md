@@ -13,15 +13,15 @@ This site generates an xkcd style password. It takes 3 inputs from the user:
 
 The theory behind the xkcd style password is that it is both easier to remember
 and more secure than traditional passwords we currently use. The site uses PHP, HTML, and CSS.
-Most of the PHP is written in logic.php and called in index.php through the `require()` function. The remainder
+Most of the PHP is written in `logic.php` and called in `index.php` through the `require()` function. The remainder
 of the PHP in index.php is a `foreach` loop which prints out the password.
 
 ## Screencast Demonstration:
-* URL:
+* URL: <http://screencast.com/t/BV12fdx7rW>
 
 ## Details for Teaching Team:
 * The file words.txt was used to generate the word list.  
-* In order to avoid notice errors all of the PHP in both index.php and logic.php is encased in an `if (!empty($_GET))`
+* In order to avoid notice errors all of the PHP in both `index.php` and `logic.php` is encased in an `if (!empty($_GET))`
 
 ## Plugins, Libraries, Packages or Outside Code:
 * Bootstrap for styling
@@ -30,4 +30,4 @@ of the PHP in index.php is a `foreach` loop which prints out the password.
 * The word list is taken from <http://www.mieliestronk.com/corncob_lowercase.txt> which was posted to Piazza by Matthew Bullen.
 * The code for opening a file adapted from <http://stackoverflow.com/questions/5904045/pull-random-line-from-txt-file-as-string> but the only line used ended up being `$f_contents = file("random.txt");`
 because I did not find the `array_rand()` function very helpful. It has strange behavior so I chose to use `rand()` instead.
-* I ran in to an issue where PHP added a space between array elements when echo'ing them using the `foreach` function. I found the array_map function from <http://stackoverflow.com/questions/5762439/how-to-trim-white-spaces-of-array-values-in-php>
+* I ran in to an issue where PHP added a space between array elements when echo'ing them using the `foreach` function. I found the `array_map` function from <http://stackoverflow.com/questions/5762439/how-to-trim-white-spaces-of-array-values-in-php>
